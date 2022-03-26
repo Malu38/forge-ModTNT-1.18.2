@@ -1,6 +1,7 @@
 package fr.malu.tntmod.client.renderer.entity;
 
 import fr.malu.tntmod.TNTMod;
+import fr.malu.tntmod.item.ModItems;
 import net.minecraft.client.renderer.entity.ArrowRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
@@ -19,7 +20,7 @@ public class TNTArrowRenderer extends ArrowRenderer {
 
     @Override
     public ResourceLocation getTextureLocation(Entity pEntity) {
-        Item referenceItem = pEntity.getPickResult().getItem();
-        return new ResourceLocation(TNTMod.MODID, "textures/entity/projectiles/" + referenceItem.getRegistryName().getPath() + ".png");
+        Item referenceItem = ModItems.TNT_ARROW.get();
+        return new ResourceLocation(TNTMod.MODID, "textures/entity/projectiles/tnt_arrow.png");
     }
 }

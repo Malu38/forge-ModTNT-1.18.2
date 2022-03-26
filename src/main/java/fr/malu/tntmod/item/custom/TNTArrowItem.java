@@ -1,5 +1,7 @@
 package fr.malu.tntmod.item.custom;
 
+import fr.malu.tntmod.item.ModItems;
+import fr.malu.tntmod.world.entity.projectiles.TNTArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.Arrow;
@@ -18,7 +20,8 @@ public class TNTArrowItem extends ArrowItem {
 
     @Override
     public AbstractArrow createArrow(Level pLevel, ItemStack pStack, LivingEntity pShooter) {
-        Arrow arrow = new Arrow(pLevel, pShooter);
+
+        TNTArrow arrow = new TNTArrow(pShooter, pLevel, ModItems.TNT_ARROW.get());
         arrow.setBaseDamage(this.damage);
         return arrow;
     }
