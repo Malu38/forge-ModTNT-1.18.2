@@ -10,7 +10,7 @@
       "item": "minecraft:bow"
     },
     "t": {
-      "item": "minecraft:tnt"
+      "item": "tntmod:tnt_nugget"
     }
   },
   "result": {

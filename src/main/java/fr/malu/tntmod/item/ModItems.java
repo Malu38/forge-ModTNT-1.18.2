@@ -15,6 +15,9 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TNTMod.MODID);
 
+    public static final RegistryObject<Item> TNT_NUGGET = ITEMS.register("tnt_nugget",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).tab(ModCreativeModTab.TNTMOD_TAB)));
+
     public static final RegistryObject<Item> TNT_ARROW = ITEMS.register("tnt_arrow",
             () -> new ArrowItem(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).tab(ModCreativeModTab.TNTMOD_TAB)));
 
