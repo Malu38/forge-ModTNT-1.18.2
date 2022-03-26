@@ -3,6 +3,7 @@ package fr.malu.tntmod;
 import com.mojang.logging.LogUtils;
 import fr.malu.tntmod.item.ModItems;
 import fr.malu.tntmod.util.ModItemProperties;
+import fr.malu.tntmod.world.entity.ModEntityType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,6 +33,7 @@ public class TNTMod {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModEntityType.register(eventBus);
 
         eventBus.addListener(this::setup);
 

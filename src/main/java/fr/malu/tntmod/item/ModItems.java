@@ -1,6 +1,7 @@
 package fr.malu.tntmod.item;
 
 import fr.malu.tntmod.TNTMod;
+import fr.malu.tntmod.item.custom.TNTArrowItem;
 import net.minecraft.world.item.ArrowItem;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,7 +20,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.TNTMOD_TAB)));
 
     public static final RegistryObject<Item> TNT_ARROW = ITEMS.register("tnt_arrow",
-            () -> new ArrowItem(new Item.Properties().tab(ModCreativeModTab.TNTMOD_TAB)));
+            () -> new TNTArrowItem(new Item.Properties().tab(ModCreativeModTab.TNTMOD_TAB), 1.5f));
 
     public static final RegistryObject<Item> TNT_BOW = ITEMS.register("tnt_bow",
             () -> new BowItem(new Item.Properties().tab(ModCreativeModTab.TNTMOD_TAB).durability(500)));
