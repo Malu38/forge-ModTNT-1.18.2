@@ -1,0 +1,6 @@
+{
+    "parent": "tntmod:item/tnt_bow",
+    "textures": {
+        "layer0": "tntmod:item/tnt_bow_pulling_2"
+    }
+}

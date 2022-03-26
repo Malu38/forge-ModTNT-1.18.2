@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ttt",
+    "tTt",
+    "ttt"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:bow"
+    },
+    "t": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "result": {
+    "item": "tntmod:tnt_bow"
+  }
+}
