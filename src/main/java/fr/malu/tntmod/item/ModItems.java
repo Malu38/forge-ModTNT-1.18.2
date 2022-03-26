@@ -16,13 +16,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TNTMod.MODID);
 
     public static final RegistryObject<Item> TNT_NUGGET = ITEMS.register("tnt_nugget",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).tab(ModCreativeModTab.TNTMOD_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.TNTMOD_TAB)));
 
     public static final RegistryObject<Item> TNT_ARROW = ITEMS.register("tnt_arrow",
-            () -> new ArrowItem(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).tab(ModCreativeModTab.TNTMOD_TAB)));
+            () -> new ArrowItem(new Item.Properties().tab(ModCreativeModTab.TNTMOD_TAB)));
 
     public static final RegistryObject<Item> TNT_BOW = ITEMS.register("tnt_bow",
-            () -> new BowItem(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).tab(ModCreativeModTab.TNTMOD_TAB).durability(500)));
+            () -> new BowItem(new Item.Properties().tab(ModCreativeModTab.TNTMOD_TAB).durability(500)));
 
 
 
