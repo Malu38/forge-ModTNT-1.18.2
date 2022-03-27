@@ -10,6 +10,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
@@ -29,9 +30,8 @@ public class TNTArrow extends AbstractArrow {
     public TNTArrow(LivingEntity shooter, Level level, Item referenceItem) {
         super(ModEntityType.TNT_ARROW.get(), shooter, level);
         this.referenceItem = referenceItem;
-        if(shooter.getItemInHand(InteractionHand.MAIN_HAND).getItem() == ModItems.TNT_BOW.get()) {
-            this.explosionPower = 4;
-        }else if(shooter.getItemInHand(InteractionHand.OFF_HAND).getItem() == ModItems.TNT_BOW.get()) {
+        if(shooter.getItemInHand(InteractionHand.MAIN_HAND).getItem() == Items.TNT) {
+        }else if(shooter.getItemInHand(InteractionHand.OFF_HAND).getItem() == ModItems.TNT_BOW.get() || shooter.getItemInHand(InteractionHand.MAIN_HAND).getItem() == ModItems.TNT_BOW.get()) {
             this.explosionPower = 4;
         }
     }
